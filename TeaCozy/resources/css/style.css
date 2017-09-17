@@ -1,0 +1,118 @@
+/*All general CSS stling */
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  justify-content: center;
+}
+a {
+  color: inherit;
+}
+/*All CSS styling for the header and navigation sections */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  top: 0px;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 0px; /** Based on visual analysis. Seems like there is no margin below the header */
+}
+.toplogo{
+  height: 50px;
+  padding-left: 10px;
+}
+.navigation{
+  margin-right: 15px;
+  justify-content: space-between;
+}
+.navigation span{
+  padding: 10px; /* Done to increase padding between nav items. */
+  text-decoration: underline; /*Not done in .nav selector because underlines showing up bw spans */
+}
+/*ALL CSS Styling for the mission banner section */
+#mission {
+  margin-top: 69px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  background-image: url("../../resources/images/img-mission-background.jpg");
+}
+.missiontext{
+  background-color: black;
+  vertical-align: middle;
+}
+/*All CSS stling for the Tea of the Month sections */
+#featuredTea {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+.selectTeas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.berryblitz, .spicedrum, .donuts, .myrtle, .bedford{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* The following was done to reduce excess space between the H2 and H4 */
+#featuredTea h2{
+  margin-bottom: 0px;
+}
+.selectTeas h4{
+  margin-top: 10px;
+}
+/*All CSS styling for the Locations sections */
+#locations{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 500px;
+  background-image: url("../../resources/images/img-locations-background.jpg");
+  width: 1200px;
+}
+#locations .locationboxes{
+  display: flex;
+  justify-content: space-around;
+}
+.downtown, .eastbayside, .oakdale{
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  width: 300px;
+  background-color: black;
+  padding: 1px 10px;
+  margin: 15px 20px;
+}
+
+/*CSS styling for footer section */
+footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.copyright{
+  text-align: left;
+  margin-left: 20px;
+}
